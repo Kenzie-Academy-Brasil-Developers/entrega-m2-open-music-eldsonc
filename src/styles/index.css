@@ -1,1 +1,172 @@
 /* Desenvolva sua estilização aqui ... */
+header {
+    margin: 0 auto;
+    margin-top: 4.813rem;
+    margin-bottom: 4.063rem;
+    width: 40.063rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.font-1 {
+    font-size: var(--font-1);
+    font-weight: 600;
+    line-height: 33.89px;
+    color: var(--color-grey-1);
+}
+
+header > button {
+    width: 2.25rem;
+    height: 2.25rem;
+
+    border: none;
+    border-radius: var(--radius-1);
+    
+    background-color: var(--color-grey-8);
+
+    cursor: pointer;
+}
+
+/* Main */
+main {
+    margin: 0 auto;
+    width: 40.063rem;
+}
+
+/* Categories */
+.container_gender {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.font-2 {
+    font-size: var(--font-2);
+    font-weight: 600;
+    line-height: 19.26px;
+    color: var(--color-grey-1);
+}
+
+.container_gender > ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 1.884rem;
+}
+
+.gender_button {
+    padding: 8px;
+
+    border: none;
+    border-radius: var(--radius-1);
+    background-color: var(--color-grey-8);
+
+    font-weight: 500;
+    font-size: var(--font-3);
+    color: var(--color-grey-2);
+
+    cursor: pointer;
+}
+
+.active {
+    background: var(--color-actived-fixed);
+    border: 1px solid var(--color-white-fixed);
+    color: var(--color-white-fixed);
+}
+
+/* Price */
+.container_price {
+    margin-top: 3.75rem;
+}
+
+.price_header {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price_header > p {
+    font-size: var(--font-2);
+    font-weight: 500;
+    line-height: 19.36px;
+    color: var(--color-grey-2);
+}
+
+input {
+    width: 100%;
+    height: 8px;
+
+    accent-color: var(--color-brand-1);
+ 
+    background: var(--color-grey-5);
+    border-radius: 4px;
+}
+
+/* Albuns */
+.albuns {
+    margin-top: 3.75rem;
+}
+
+.albuns_ul {
+    margin-top: 3.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.563rem;
+}
+
+.card {
+    width: 19.25rem;
+    height: 16.188rem;
+
+    border-radius: var(--radius-1);
+    background-color: var(--color-grey-8);
+}
+
+.card > img {
+    width: 100%;
+    height: 7.063rem;
+    object-fit: cover;
+
+    border-radius: 5px 5px 0px 0px;
+}
+
+.card_text {
+    padding: 12px 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.card_text > p {
+    font-weight: 500;
+    font-size: var(--font-3);
+    color: var(--color-grey-2);
+    list-style: 14.52px;
+}
+
+.card_span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_span > p {
+    font-size: var(--font-2);
+    font-weight: 600;
+    color: var(--color-grey-1);
+    line-height: 16.94px;
+}
+
+.card_span > button {
+    padding: 8px;
+    background-color: var(--color-grey-7);
+    border: none;
+
+    font-size: var(--font-2);
+    font-weight: 500;
+    color: var(--color-grey-2);
+
+    cursor: pointer;
+}

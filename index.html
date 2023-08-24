@@ -12,9 +12,41 @@
     <link rel="stylesheet" href="./src/styles/index.css" />
 
     <!-- SCRIPTS  -->
+    <script type="module" src="./src/scripts/index.js"></script>
+    <script type="module" src="./src/scripts/theme.js"></script>
+    <script type="module" src="https://kit.fontawesome.com/1d585ba1df.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header>
+      <h1 class="font-1">open music</h1>
+      <button id="dark-mode-toggle"></button>
+    </header>
+    <main>
+      <section class="container">
+        <div class="container_gender">
+          <h2 class="font-2">Gênero Musical</h2>
+          <ul id="gender"></ul>
+        </div>
+        <div class="container_price">
+          <div class="price_header">
+            <h2 class="font-2">Definir Preço</h2>
+            <p id="price_value">Até R$ ...</p>
+          </div>
+          <input 
+            id="price_input"
+            class="price_input" 
+            min="0" 
+            max="100" 
+            value="50"
+            step="0.01" 
+            type="range">
+        </div>
+      </section>
+
+      <section class="container albuns">
+        <h2 class="font-2">Álbuns Encontrados</h2>
+        <ul id="product" class="albuns_ul"></ul>
+      </section>
+    </main>
   </body>
 </html>
